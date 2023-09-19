@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  transition: ease-in-out;
+}
+
+.nav {
+  height: 12vh;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.active {
+  color: #005bed;
+}
+
+#blue {
+  background-color: #005bed;
+  color: white;
+  width: 13rem;
+  height: 3.5rem;
+  padding: 18px 0;
+  font-size:14px;
+}
+
+.top-nav,
+.bottom-nav {
+  display: flex;
+  margin: 0 0 0 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-nav{
+  height: 1.8rem;
+  background-color: #cee1ff4f;
+}
+.bottom-nav{
+  height: 4rem;
+}
+nav i {
+  margin: 0 8px;
+
+}
+
+/* home section */
+.home {
+  height: 86vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 10vh;
+}
+
+.home .left {
+  width: 58%;
+  height: inherit;
+  background-color: #005bed;
+  position: relative;
+}
+
+.home .left .container1 {
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+.container1 h1{
+  font-size: 3rem;
+}
+.container1 div{
+  display: inline-block;
+  width: 12rem;
+  height: 4rem;
+  margin: 1.5rem 0 0;
+  padding: 0.2rem 1rem;
+  border-left: 2px solid white;
+}
+.stats p{
+  margin-top: 6px;
+}
+.home .right {
+  width: 50%;
+  height: inherit;
+  background-image: url(https://thumbs.dreamstime.com/b/portrait-doctors-white-coats-hospital-ward-153856864.jpg);
+  background-repeat: no-repeat, no-repeat;
+  position: relative;
+}
+.right h1{
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* appoint section */
+.appoint{
+  
+    height: 100vh;
+    display: flex;
+    /* align-items: center; */
+    
+}
+.appoint .details, .appoint .form{
+width: 50%;
+}
+
+#tag{
+  padding: 0.5rem;
+  border: 1px solid #00000095;
+  border-radius: 25px;
+  margin: 0.5rem;
+  top: 20px;
+  left: 30px;
+  position: relative;
+  color:#00000095 ;
+}
+.details h1{
+  margin: 2rem 1rem;
+  top: 20px;
+  position: relative;
+  font-size: 2.7rem;
+}
+.details p{
+  margin: 3rem 1.2rem 3.1rem 1rem;
+    font-size: 1.1rem;
+    color: #00000095;
+}
+.details .box{
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  height: 10rem;
+  padding: 2rem;
+  background-color: #cee1ff96;
+  width: 38rem;
+  margin: 1rem;
+  border-radius: 7px;
+}
+.details .box i{
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px 0;
+  margin: 0 2rem 0 1rem;
+}
+.details .box p{
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+.details .box strong{
+  font-size: 1.5rem;
+}
+
+.appoint .form{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #cee1ff96;
+
+  width: 45%;
+  margin: auto 0;
+  height: 96%;
+  border-radius: 9px;
+}
+.appoint .form input, .appoint .form select{
+  height: 3.5rem;
+  margin: 0.4rem;
+  width: 16rem;
+  border-radius: 7px;
+    border: none;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+.appoint .form #doctor {
+  color: #00000096;
+}
+.appoint .form textarea#txt-area{
+  width: 91%;
+  height: 7.5rem;
+  border-radius: 7px;
+    border: none;
+    margin: 0.4rem;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+.appoint .form button{
+  width: 89%;
+  height: 3.5rem;
+  border-radius: 7px;
+    border: none;
+    margin: 0.4rem;
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: white;
+    background-color: #0062ff;
+}
+
+
+main .back{
+  background-color: #0062ff;
+  width: 3rem;
+  height: 3rem;
+  z-index: 5;
+  position: fixed;
+  bottom: 2rem;
+  right: 0.5rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: none;
+}

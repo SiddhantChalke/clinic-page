@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinic</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a377cb2be9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="top-nav">
+            <div class="address">
+                <i class="fa-solid fa-location-dot" style="color: #797979c5;"></i>
+                <span>123 Street, New York, USA</span>
+                <i class="fa-solid fa-clock" style="color: #797979c5;"></i>
+                <span>Mon - Fri.9:00 AM - 9:00 PM</span>
+            </div>
+            <div class="socials">
+                <i class="fa-solid fa-phone" style="color: #003ea8c5;"></i>
+                <span>91+ 9478435600</span>
+                <i class="fa-brands fa-facebook" style="color: #003ea8c5;"></i>
+                <i class="fa-brands fa-twitter" style="color: #003ea8c5;"></i>
+                <i class="fa-brands fa-linkedin" style="color: #003ea8c5;"></i>
+                <i class="fa-brands fa-instagram" style="color: #003ea8c5;"></i>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <div class="logo">
+                <i class="fa-thin fa-hospital" style="color: #003ea8;"></i>
+                <!-- <img src="clinic.png" alt=""> -->
+                <span style="font-size: 2.5rem;">Klinic</span>
+            </div>
+
+            <ul class="links">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Pages <i class="fa-solid fa-angle-down" ></i></a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="#appointment" id="blue">Appointment <i class="fa-solid fa-arrow-right"></i></a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <main>
+        <section class="home" id="home">
+            <div class="left">
+                <div class="container1">
+                    <h1>Good Health Is The Root Of All Happiness</h1>
+                    <div class="stats">
+                        <h2>123</h2>
+                        <p>Expert Doctors</p>
+                    </div>
+                    <div class="stats">
+                        <h2>1234</h2>
+                        <p>Medical Staff</p>
+                    </div>
+                    <div class="stats">
+                        <h2>12345</h2>
+                        <p>Total Patients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <h1>Cardiology</h1>
+            </div>
+        </section>
+        <section class="appoint" id="appointment">
+            <div class="details">
+                <span id="tag">Appointment</span>
+                <h1>Make An Appointment To Visit Our Doctor</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio tempora inventore, molestias
+                    repellendus similique deleniti officiis iste beatae aliquid! Optio temporas.
+                </p>
+                
+                <div class="box">
+                        <i class="fa-solid fa-phone" style="color: #005eff;"></i>
+                    <div class="">
+                        <p>Call us now</p>
+                        <strong>+012 3456789</strong>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-envelope" style="color: #005eff;"></i>
+                    <div class="">
+                        <p>Mail us now</p>
+                        <strong>info@example.com</strong>
+                    </div>
+                </div>
+            </div>
+            <form class="form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <input type="number" placeholder="Your Number">
+                <select name="Choose Doctor" id="doctor" onchange="(this.style.color='black')">
+                    <option value="" id="default" disabled selected hidden>Choose Doctor</option>
+                    <option value="">Dr. Stone</option>
+                    <option value="">Dr. Tenma</option>
+                    <option value="">Dr. Strange</option>
+                </select>
+                <input type="text" onfocus="(this.type = 'date')" placeholder="Choose Date">
+                <input type="text" onfocus="(this.type = 'date')" placeholder="Choose Date">
+                <textarea name="" id="txt-area" cols="30" rows="10" placeholder="Describe your problem"></textarea>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+        <button onclick="topFunction()" class="back" id="back">
+            <i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></a>
+        </button>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
